@@ -1,0 +1,109 @@
+.home-slider {
+    width: 100%;
+    position: relative;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .video-section {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .video-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px;
+  }
+  
+  .video-info h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .video-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .controls button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .thumbnail-strip {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .thumbnail {
+    width: 80px;
+    height: 45px;
+    margin-right: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+  }
+  
+  .thumbnail.active, .thumbnail:hover {
+    opacity: 1;
+    border: 2px solid white;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .video-section {
+      height: 300px; /* Decrease height on smaller screens */
+    }
+  
+    .video-info h2 {
+      font-size: 20px; /* Adjust font size */
+    }
+  
+    .video-info p {
+      font-size: 12px; /* Adjust font size */
+    }
+  
+    .controls button {
+      padding: 6px 12px; /* Smaller button padding */
+    }
+  
+    .thumbnail {
+      width: 60px; /* Decrease thumbnail size */
+      height: 34px; /* Decrease thumbnail size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .video-section {
+      height: 200px; /* Further decrease height for very small screens */
+    }
+  
+    .video-info h2 {
+      font-size: 18px; /* Adjust font size */
+    }
+  
+    .video-info p {
+      font-size: 10px; /* Adjust font size */
+    }
+  
+    .controls button {
+      padding: 4px 8px; /* Smaller button padding */
+    }
+  
+    .thumbnail {
+      width: 50px; /* Further decrease thumbnail size */
+      height: 28px; /* Further decrease thumbnail size */
+    }
+  }
+  
